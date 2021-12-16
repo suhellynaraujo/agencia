@@ -1,0 +1,529 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+
+header{    
+    background: url("../img/Banner-1920x1080.png") no-repeat ;
+    height:100%;
+    width: 100%;
+    background-size: cover; 
+    padding-top: 50px;    
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.400);         
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav{   
+    background-color: rgba(0, 0, 0, 0.226);
+    filter: brightness(90%);
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;      
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;
+}
+
+li{ 
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;   
+}
+
+.menu a:hover{
+    color: #ae6c0a;  
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 80px;
+    width: 30%;
+}
+
+
+.btn{
+    margin-top: 30px;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bolder; 
+    color:#ea930c
+}
+
+.btn:hover{
+    transition: 0.3s;
+    background-color: #ea930c;
+    color: #fff;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.titulo p{
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisa{
+   background-color:#e7be34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+
+
+}
+.btnpes{
+    color: #ea930c;
+    margin-top: 30px;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;    
+}
+.btnpes:hover{
+    transition: 0.3s;
+    background-color: #ea930c;
+    color: #fff;
+
+}
+.pesq{
+    border: 0;
+    border-radius: 15px;
+    height: 40px;
+    color: #ea930c;
+    font-weight: bold;
+    
+     
+}
+.pesq input:focus, button:focus{
+    box-shadow: 0000;
+    outline:0;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+
+.card-imagem1{
+    grid-area: imagem;
+    background: url(https://todepassagem.clickbus.com.br/wp-content/uploads/2020/03/Cristo-Redentor-RJ.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card-imagem2{
+    grid-area: imagem;
+    background: url(https://static.rentcars.com/imagens/modules/localidade/about/89-desktop-location-description.png) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card-imagem3{
+    grid-area: imagem;
+    background: url(https://www.submarinoviagens.com.br/media/17958672/brasilia-congresso-nacional-504246364.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card-imagem4{
+    grid-area: imagem;
+    background: url(https://www.transportal.com.br/noticias/wp-content/uploads/2018/05/Balne%C3%A1rio-Cambori%C3%BA-Santa-Catarina.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+
+.card-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+}
+
+.card-texto p{
+    color: #ea930c;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card button{
+    padding: 10px;
+    background-color:#e7be34 ;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.card button:hover{
+    background-color: #ea930c;
+    color: #fff;
+}
+
+.btn-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn2{
+    background-color:#e7be34;
+    margin-top: 30px;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;    
+}
+.btn2:hover{
+    transition: 0.3s;
+    background-color: #ea930c;
+    color: #fff;
+
+}
+
+.card2{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+}
+
+.card2:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+
+.card2-imagem1{
+    grid-area: imagem;
+    background: url(https://triplover.com.br/wp-content/uploads/2019/10/W-Maldives.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card2-imagem2{
+    grid-area: imagem;
+    background: url(https://www.latamairlines.com/content/dam/latamxp/sites/destinos/chile/seo/vuelos-santiago.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card2-imagem3{
+    grid-area: imagem;
+    background: url(https://cdn.getyourguide.com/img/location/5c9f29710b6f9.jpeg/88.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card2-imagem4{
+    grid-area: imagem;
+    background: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card2-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+
+.card2-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+}
+
+.card2-texto p{
+    color: #ea930c;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card2 h2{
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.card2 button{
+    padding: 10px;
+    background-color:#e7be34 ;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.card2 button:hover{
+    background-color: #ea930c;
+    color: #fff;
+} 
+
+
+.card3{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+}
+
+.card3:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+
+.card3-imagem1{
+    grid-area: imagem;
+    background: url(https://todepassagem.clickbus.com.br/wp-content/uploads/2020/03/Cristo-Redentor-RJ.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card3-imagem2{
+    grid-area: imagem;
+    background: url(https://images.musement.com/cover/0069/97/fortaleza-brazil-jpg_header-6896973.jpeg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card3-imagem3{
+    grid-area: imagem;
+    background: url(https://www.visitbritain.com/sites/default/files/styles/consumer_campaigns_hero_mobile/public/paragraphs_bundles/hero/london.jpg?itok=Fy9nGaJ1) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card3-imagem4{
+    grid-area: imagem;
+    background: url(https://vemvoar.voeazul.com.br/wp-content/uploads/2018/07/foz-do-iguacu_05.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card3-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+
+.card3-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+}
+
+.card3-texto p{
+    color: #ea930c;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card3 h2{
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.card3 button{
+    padding: 10px;
+    background-color:#e7be34 ;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.card3 button:hover{
+    background-color: #ea930c;
+    color: #fff;
+} 
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+.pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.pag img{
+    width: 250px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.cardfee{   
+    display: grid;
+    grid-template-columns: 210px;
+    grid-template-rows: 200px 250px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:rgb(255, 255, 255); 
+    border-radius: 15px;
+    text-align: center;  
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    margin: 60px;
+   
+
+}
+.cardfee-imagem1{
+    grid-area: imagem;
+    background: url("../img/people.jpg"); 
+    border-radius: 2000px;
+    background-size: cover;  
+   
+}
+.cardfee-imagem2{
+    grid-area: imagem;
+    background: url("../img/people1.jpg"); 
+    border-radius: 1000px;
+    background-size: cover;  
+}
+.cardfee-imagem3{
+    grid-area: imagem;
+    background: url("../img/people2.jpg"); 
+    border-radius: 1000px;
+    background-size: cover;  
+}
+.cardfee-imagem4{
+    grid-area: imagem;
+    background: url("../img/people3.jpg"); 
+    border-radius: 1000px;
+    background-size: cover;  
+}
+.cardfee-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+.cardfee-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardfee-texto p{
+    color: #ea930c;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;    
+}
+hr{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}

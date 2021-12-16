@@ -1,0 +1,142 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+
+header{    
+    background: url("/img/Texting-cuate.svg") no-repeat ;  
+    height:80%;  
+    background-position: center;     
+           
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav{   
+    background-color: #e7be34;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.400);  
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;  
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;    
+}
+
+li{ 
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;   
+}
+
+.menu a:hover{
+    color: #ae6c0a;  
+}
+
+h2{
+    margin-top: 00px;
+    text-align: center;
+}
+.divContato{
+    margin-top: 50px; 
+    margin-bottom: 100px;       
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.200); 
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    height: 70%;
+    overflow: hidden;
+}
+
+.sobreAgencia{      
+    margin-left: 50px;
+    margin-right: 50px;  
+    padding: 10px; 
+    float: left;        
+}
+
+.sobreAgencia p{
+    max-width: 500px;
+}
+
+.divContatos{
+    display:block;
+}
+
+.divMensagem form{
+   display: flex;
+   flex-direction: column;   
+   margin-right: 100px;
+   float: right;
+}
+
+.divMensagem  input, textarea{
+    margin: 5px;
+    border-radius: 15px;
+    padding:10px;
+    border: 1px solid #00000070;   
+}
+
+.divMensagem  input:focus, textarea:focus {
+   box-shadow: 0000;
+   outline: 0;
+}
+
+.divMensagem button{
+    margin: 5px;
+    margin-left: 30%;
+    width: 100px;  
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #e7be34;
+   
+}
+.divMensagem button:hover{
+    background-color: #ea910c;
+    color: #fff;
+}
+
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;    
+}

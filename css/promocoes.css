@@ -1,0 +1,172 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+
+header{    
+    background: url("../img/Banner-promocao.jpg") no-repeat  ;
+    height: 400px;  
+    background-position: center; 
+    background-size: cover; 
+   
+   
+    
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav{   
+    background-color: #e7be34;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.400);  
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;  
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;    
+}
+
+li{ 
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;       
+}
+
+.menu a:hover{
+    transition: 0.3s;    
+    color: #000;
+}
+
+.menu .submenu{
+  display: none;
+  position: absolute;
+  left: 180px;
+  background: #111;
+  top: 0;
+  width: 180px;
+}
+
+
+
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+.card-imagem{
+    grid-area: imagem;
+    background: url(../img/beautiful-tropical-beach-sea.jpg) ; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;  
+}
+
+.card-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+.card-texto .nome{
+    color: #ea930c;
+    font-size: 18px;
+}
+.card-texto p{
+    color: #ea930c;
+    font-size: 13px;
+    font-weight: 300;
+}
+.card h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card button{
+    padding: 10px;
+    background-color:#e7be34 ;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+.card button:hover{
+    background-color: #ea930c;
+    color: #fff;
+}
+
+.pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.pag img{
+    width: 250px;
+}
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;    
+}
